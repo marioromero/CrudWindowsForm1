@@ -15,6 +15,5 @@ namespace EjemploCrud.Modelos
 		public bool Activo { get; set; }
 		public string Genero { get; set; }
 		public string Ciudad { get; set; }
-
 	}
 }

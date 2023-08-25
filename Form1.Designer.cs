@@ -35,7 +35,7 @@
 			this.txtApellido = new System.Windows.Forms.TextBox();
 			this.txtEdad = new System.Windows.Forms.TextBox();
 			this.chbActivo = new System.Windows.Forms.CheckBox();
-			this.btnBuscar = new System.Windows.Forms.Button();
+			this.btnLimpiar = new System.Windows.Forms.Button();
 			this.btnGuardar = new System.Windows.Forms.Button();
 			this.btnModificar = new System.Windows.Forms.Button();
 			this.btnEliminar = new System.Windows.Forms.Button();
@@ -107,14 +107,15 @@
 			this.chbActivo.Text = "Activo";
 			this.chbActivo.UseVisualStyleBackColor = true;
 			// 
-			// btnBuscar
+			// btnLimpiar
 			// 
-			this.btnBuscar.Location = new System.Drawing.Point(236, 30);
-			this.btnBuscar.Name = "btnBuscar";
-			this.btnBuscar.Size = new System.Drawing.Size(75, 23);
-			this.btnBuscar.TabIndex = 3;
-			this.btnBuscar.Text = "Buscar";
-			this.btnBuscar.UseVisualStyleBackColor = true;
+			this.btnLimpiar.Location = new System.Drawing.Point(236, 30);
+			this.btnLimpiar.Name = "btnLimpiar";
+			this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
+			this.btnLimpiar.TabIndex = 3;
+			this.btnLimpiar.Text = "Limpiar";
+			this.btnLimpiar.UseVisualStyleBackColor = true;
+			this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
 			// 
 			// btnGuardar
 			// 
@@ -135,6 +136,7 @@
 			this.btnModificar.TabIndex = 3;
 			this.btnModificar.Text = "Modificar";
 			this.btnModificar.UseVisualStyleBackColor = true;
+			this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
 			// 
 			// btnEliminar
 			// 
@@ -217,6 +219,7 @@
 			this.cbCiudad.Location = new System.Drawing.Point(85, 176);
 			this.cbCiudad.Name = "cbCiudad";
 			this.cbCiudad.Size = new System.Drawing.Size(153, 21);
+			this.cbCiudad.SelectedIndex = 0;
 			this.cbCiudad.TabIndex = 6;
 			// 
 			// Form1
@@ -231,7 +234,7 @@
 			this.Controls.Add(this.btnEliminar);
 			this.Controls.Add(this.btnModificar);
 			this.Controls.Add(this.btnGuardar);
-			this.Controls.Add(this.btnBuscar);
+			this.Controls.Add(this.btnLimpiar);
 			this.Controls.Add(this.chbActivo);
 			this.Controls.Add(this.txtEdad);
 			this.Controls.Add(this.txtApellido);
@@ -260,7 +263,7 @@
 		private System.Windows.Forms.TextBox txtApellido;
 		private System.Windows.Forms.TextBox txtEdad;
 		private System.Windows.Forms.CheckBox chbActivo;
-		private System.Windows.Forms.Button btnBuscar;
+		private System.Windows.Forms.Button btnLimpiar;
 		private System.Windows.Forms.Button btnGuardar;
 		private System.Windows.Forms.Button btnModificar;
 		private System.Windows.Forms.Button btnEliminar;

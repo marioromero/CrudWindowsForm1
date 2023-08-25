@@ -27,7 +27,15 @@ namespace EjemploCrud.Controladores
 
 		public void ActualizarUsuario(int index, Usuario usuario)
 		{
-			datos.Usuarios.RemoveAt(index);
+			Usuario usuarioExistente = datos.Usuarios[index];
+
+			usuarioExistente.Rut = usuario.Rut;
+			usuarioExistente.Edad = usuario.Edad;
+			usuarioExistente.Nombre = usuario.Nombre;
+			usuarioExistente.Apellido = usuario.Apellido;
+			usuarioExistente.Activo = usuario.Activo;
+			usuarioExistente.Genero = usuario.Genero;
+			usuarioExistente.Ciudad = usuario.Ciudad;
 		}
 
 	}
